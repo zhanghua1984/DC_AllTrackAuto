@@ -1,0 +1,1 @@
+1.数据库采用MFC的ODBC连接方式时，当选择完成后无法直接连接成功，应将新生成的数据库类中快照方式更为：m_nDefaultType = AFX_DB_USE_DEFAULT_TYPE;

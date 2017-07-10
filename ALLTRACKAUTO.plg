@@ -1,0 +1,233 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ALLTRACKAUTO - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP320C.bat" with contents
+[
+@echo off
+copy "hlp\ALLTRACKAUTO.cnt" .\Debug
+]
+Creating command line "C:\Users\ADMINI~1\AppData\Local\Temp\RSP320C.bat"
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP320D.bat" with contents
+[
+@echo off
+start /wait hcw /C /E /M "hlp\ALLTRACKAUTO.hpj"
+if errorlevel 1 goto :Error
+if not exist "hlp\ALLTRACKAUTO.hlp" goto :Error
+copy "hlp\ALLTRACKAUTO.hlp" .\Debug
+goto :done
+:Error
+echo hlp\ALLTRACKAUTO.hpj(1) : error:
+type "hlp\ALLTRACKAUTO.log"
+:done
+]
+Creating command line "C:\Users\ADMINI~1\AppData\Local\Temp\RSP320D.bat"
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "Debug/ALLTRACKAUTO.tlb" /mktyplib203 /win32 "E:\Project\大成源代码\ALLTRACKAUTO\ALLTRACKAUTO.odl""
+Copying contents file...
+已复制         1 个文件。
+Making help file...
+hlp\ALLTRACKAUTO.hpj(1) : error:
+Microsoft (R) Help Compiler
+HCRTF 4.03.0002
+Copyright (c) Microsoft Corp 1990 - 1995. All rights reserved.
+alltrackauto.hpj
+    HC5011: Error: alltrackauto.hpj : 
+ Cannot open the file "ALLTRACKAUTO.RTF."
+Creating command line "rc.exe /l 0x804 /fo"Debug/ALLTRACKAUTO.res" /i "Debug" /d "_DEBUG" "E:\Project\大成源代码\ALLTRACKAUTO\ALLTRACKAUTO.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP343F.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/ALLTRACKAUTO.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Project\大成源代码\ALLTRACKAUTO\ALLTRACKAUTO.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\ALLTRACKAUTODoc.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\ALLTRACKAUTOSet.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\ALLTRACKAUTOView.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\ANTENNA.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\APR.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\Carriage.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\CntrItem.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\Com.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\COMPORT.CPP"
+"E:\Project\大成源代码\ALLTRACKAUTO\DIALOGCARRAYTEST.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\Includes.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\MACRO.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\MainFrm.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\MSG.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\OTHERSET.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\PARPINFO.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\PROMPTINFO.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\READER.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\RUNNINGMSG.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\SETHD.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\SetPAPR.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\Setview.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\SHOWMSG.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\SpeedLine.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\SpeedTable.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\Station.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\STOPFLAG.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\symbol.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\TOOLBARDIY.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\TRACKCODE.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\TRACKCODECHANGE.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\Train.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\TRAINSET.cpp"
+"E:\Project\大成源代码\ALLTRACKAUTO\wheel.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP343F.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP3440.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/ALLTRACKAUTO.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Project\大成源代码\ALLTRACKAUTO\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP3440.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP3441.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ALLTRACKAUTO.pdb" /debug /machine:I386 /out:"Debug/ALLTRACKAUTO.exe" /pdbtype:sept 
+".\Debug\ALLTRACKAUTO.obj"
+".\Debug\ALLTRACKAUTODoc.obj"
+".\Debug\ALLTRACKAUTOSet.obj"
+".\Debug\ALLTRACKAUTOView.obj"
+".\Debug\ANTENNA.obj"
+".\Debug\APR.obj"
+".\Debug\Carriage.obj"
+".\Debug\CntrItem.obj"
+".\Debug\Com.obj"
+".\Debug\COMPORT.OBJ"
+".\Debug\DIALOGCARRAYTEST.obj"
+".\Debug\Includes.obj"
+".\Debug\MACRO.obj"
+".\Debug\MainFrm.obj"
+".\Debug\MSG.obj"
+".\Debug\OTHERSET.obj"
+".\Debug\PARPINFO.obj"
+".\Debug\PROMPTINFO.obj"
+".\Debug\READER.obj"
+".\Debug\RUNNINGMSG.obj"
+".\Debug\SETHD.obj"
+".\Debug\SetPAPR.obj"
+".\Debug\Setview.obj"
+".\Debug\SHOWMSG.obj"
+".\Debug\SpeedLine.obj"
+".\Debug\SpeedTable.obj"
+".\Debug\Station.obj"
+".\Debug\StdAfx.obj"
+".\Debug\STOPFLAG.obj"
+".\Debug\symbol.obj"
+".\Debug\TOOLBARDIY.obj"
+".\Debug\TRACKCODE.obj"
+".\Debug\TRACKCODECHANGE.obj"
+".\Debug\Train.obj"
+".\Debug\TRAINSET.obj"
+".\Debug\wheel.obj"
+".\Debug\ALLTRACKAUTO.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP3441.tmp"
+<h3>Output Window</h3>
+Creating Type Library...
+Processing E:\Project\大成源代码\ALLTRACKAUTO\ALLTRACKAUTO.odl
+ALLTRACKAUTO.odl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ALLTRACKAUTO.cpp
+ALLTRACKAUTODoc.cpp
+ALLTRACKAUTOSet.cpp
+ALLTRACKAUTOView.cpp
+ANTENNA.cpp
+APR.cpp
+Carriage.cpp
+CntrItem.cpp
+Com.cpp
+COMPORT.CPP
+DIALOGCARRAYTEST.cpp
+Includes.cpp
+MACRO.cpp
+MainFrm.cpp
+MSG.cpp
+OTHERSET.cpp
+PARPINFO.cpp
+PROMPTINFO.cpp
+READER.cpp
+RUNNINGMSG.cpp
+Generating Code...
+Compiling...
+SETHD.cpp
+SetPAPR.cpp
+Setview.cpp
+SHOWMSG.cpp
+SpeedLine.cpp
+SpeedTable.cpp
+Station.cpp
+STOPFLAG.cpp
+symbol.cpp
+TOOLBARDIY.cpp
+TRACKCODE.cpp
+TRACKCODECHANGE.cpp
+Train.cpp
+TRAINSET.cpp
+wheel.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP42F2.tmp" with contents
+[
+/nologo /o"Debug/ALLTRACKAUTO.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\ALLTRACKAUTO.sbr"
+".\Debug\ALLTRACKAUTODoc.sbr"
+".\Debug\ALLTRACKAUTOSet.sbr"
+".\Debug\ALLTRACKAUTOView.sbr"
+".\Debug\ANTENNA.sbr"
+".\Debug\APR.sbr"
+".\Debug\Carriage.sbr"
+".\Debug\CntrItem.sbr"
+".\Debug\Com.sbr"
+".\Debug\COMPORT.SBR"
+".\Debug\DIALOGCARRAYTEST.sbr"
+".\Debug\Includes.sbr"
+".\Debug\MACRO.sbr"
+".\Debug\MainFrm.sbr"
+".\Debug\MSG.sbr"
+".\Debug\OTHERSET.sbr"
+".\Debug\PARPINFO.sbr"
+".\Debug\PROMPTINFO.sbr"
+".\Debug\READER.sbr"
+".\Debug\RUNNINGMSG.sbr"
+".\Debug\SETHD.sbr"
+".\Debug\SetPAPR.sbr"
+".\Debug\Setview.sbr"
+".\Debug\SHOWMSG.sbr"
+".\Debug\SpeedLine.sbr"
+".\Debug\SpeedTable.sbr"
+".\Debug\Station.sbr"
+".\Debug\STOPFLAG.sbr"
+".\Debug\symbol.sbr"
+".\Debug\TOOLBARDIY.sbr"
+".\Debug\TRACKCODE.sbr"
+".\Debug\TRACKCODECHANGE.sbr"
+".\Debug\Train.sbr"
+".\Debug\TRAINSET.sbr"
+".\Debug\wheel.sbr"]
+Creating command line "bscmake.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP42F2.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ALLTRACKAUTO.exe - 2 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

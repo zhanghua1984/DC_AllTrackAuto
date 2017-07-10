@@ -1,0 +1,1167 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ALLTRACKAUTO.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#include ""l.chs\\afxolecl.rc""        // OLE container resources\r\n"
+    "#include ""l.chs\\afxdb.rc""           // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ALLTRACKAUTO.ico"
+IDR_ALLTRATYPE          ICON    DISCARDABLE     "res\\ALLTRACKAUTODoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_TOOLBARDIY          BITMAP  DISCARDABLE     "res\\toolbard.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_RECORD_FIRST
+    BUTTON      ID_RECORD_PREV
+    BUTTON      ID_RECORD_NEXT
+    BUTTON      ID_RECORD_LAST
+    SEPARATOR
+    BUTTON      ID_SETSPEED
+    BUTTON      ID_BUTTON32833
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+IDR_TOOLBARDIY TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_BUTTONNULL
+    BUTTON      ID_BUTTONSETSPEED
+    BUTTON      ID_BUTTONP1
+    SEPARATOR
+    BUTTON      ID_BUTTONP2
+    BUTTON      ID_BUTTONP3
+    BUTTON      ID_BUTTONP4
+    BUTTON      ID_BUTTONPB
+    BUTTON      ID_BUTTONB1
+    BUTTON      ID_BUTTONB2
+    BUTTON      ID_BUTTONB3
+    BUTTON      ID_BUTTONB4
+    BUTTON      ID_BUTTONB5
+    BUTTON      ID_BUTTONB6
+    BUTTON      ID_BUTTONB7
+    BUTTON      ID_BUTTONEB
+    BUTTON      ID_BUTTONCARRAYCHANGE
+    BUTTON      ID_BUTTONSHOWHANDLE
+    BUTTON      ID_BUTTONSHOWAUTO
+    BUTTON      ID_BUTTONRETURN1
+    BUTTON      ID_BUTTONDEBUG
+    BUTTON      ID_BUTTONRETURN2
+    BUTTON      ID_BUTTONRETURN3
+    BUTTON      ID_BUTTONCALCULATE
+    BUTTON      ID_BUTTONDISABLEFSB
+    BUTTON      ID_BUTTONDISABLEEB
+    BUTTON      ID_AUTOSTOP
+    BUTTON      ID_BUTTONTESTLINE
+    BUTTON      ID_BUTTONTESTLINEFUCTION
+    BUTTON      ID_BUTTONFORBIDAPR
+    BUTTON      ID_RECODEREB
+    BUTTON      ID_BUTTON840
+    BUTTON      ID_BUTTON835
+    BUTTON      ID_BUTTON826
+    BUTTON      ID_BUTTON818
+    BUTTON      ID_BUTTON809
+    BUTTON      ID_BUTTON800
+    BUTTON      ID_BUTTON791
+    BUTTON      ID_BUTTON783
+    BUTTON      ID_BUTTON774
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "传送(&D)...",                 ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT, GRAYED
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY, GRAYED
+        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE, GRAYED
+        MENUITEM "选择性粘贴(&S)...",           ID_EDIT_PASTE_SPECIAL
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "插入新对象(&N)...",           ID_OLE_INSERT_NEW, GRAYED
+        MENUITEM "链接(&K)...",                 ID_OLE_EDIT_LINKS, GRAYED
+        MENUITEM "<<用 OLE 谓词替换此处>>",     ID_OLE_VERB_FIRST, GRAYED
+        POPUP "数据"
+        BEGIN
+            MENUITEM "载频测试",                    ID_MENUCARRAYTEST
+            MENUITEM "轨道码频",                    ID_MENUTRACKCODE
+        END
+    END
+    POPUP "设置"
+    BEGIN
+        MENUITEM "视图",                        ID_MENUSETVIEW
+        POPUP "测速电机方向"
+        BEGIN
+            MENUITEM "前进",                        ID_MENUDIRFORWARD
+            MENUITEM "0",                           ID_MENUDIR0
+            MENUITEM "后退",                        ID_MENUDIRBACK
+        END
+        POPUP "首尾车"
+        BEGIN
+            MENUITEM "首车",                        ID_MENUHEAD
+            MENUITEM "尾车",                        ID_MENUTRAIL
+        END
+        POPUP "模拟状态"
+        BEGIN
+            MENUITEM "上位机",                      ID_MENUPC
+            MENUITEM "司控台",                      ID_MENUDC
+        END
+        POPUP "视角"
+        BEGIN
+            MENUITEM "列车",                        ID_MENUVIEWONTRAIN
+            MENUITEM "轨道",                        ID_MENUVIEWONTRACK
+        END
+        POPUP "轮径值"
+        BEGIN
+            MENUITEM "840cm",                       ID_MENUWHEEL840
+            MENUITEM "835cm",                       ID_MENUWHEEL835
+            MENUITEM "826cm",                       ID_MENUWHEEL826
+            MENUITEM "818cm",                       ID_MENUWHEEL818
+            MENUITEM "809cm",                       ID_MENUWHEEL809
+            MENUITEM "800cm",                       ID_MENUWHEEL800
+            MENUITEM "791cm",                       ID_MENUWHEEL791
+            MENUITEM "783cm",                       ID_MENUWHEEL783
+            MENUITEM "774cm",                       ID_MENUWHEEL774
+        END
+        MENUITEM "头尾车故障",                  ID_MENUHD
+        MENUITEM "码间隙",                      ID_MENUOTHERSET
+        POPUP "上下行", GRAYED
+        BEGIN
+            MENUITEM "上行",                        ID_MENUUP
+            MENUITEM "下行",                        ID_MENUDOWN
+        END
+        POPUP "调试"
+        BEGIN
+            MENUITEM "返回数据",                    ID_MENUITEMRETURN
+            MENUITEM "不返回",                      ID_MENUITEMNORETURN
+        END
+        POPUP "颜色"
+        BEGIN
+            MENUITEM "线条颜色",                    ID_MENUCOLORLINE
+            MENUITEM "字体颜色",                    ID_MENUCOLORFONT
+            MENUITEM "APR颜色",                     ID_MENUCOLORAPR
+        END
+        MENUITEM "车辆",                        ID_MENUTRAIN
+        POPUP "天线和阅读器"
+        BEGIN
+            MENUITEM "使用1号车",                   ID_MENUHEAD1
+            MENUITEM "使用6号车",                   ID_MENUTAIL1
+        END
+        POPUP "行车方向"
+        BEGIN
+            MENUITEM "前进",                        ID_MENUDATABASE1
+            MENUITEM "后退",                        ID_MENUDATABASE6
+        END
+        POPUP "首次EB点"
+        BEGIN
+            MENUITEM "记录",                        ID_MENUEBRECODER
+        END
+        MENUITEM "禁止发送有源APR",             ID_MENUITEMPAPRFORBID
+        MENUITEM "有源APR设置",                 ID_MENUITEMSETPAPR
+    END
+    POPUP "档位"
+    BEGIN
+        MENUITEM "EB",                          ID_MENUEB
+        MENUITEM "制动7",                       ID_MENUB7
+        MENUITEM "制动6",                       ID_MENUB6
+        MENUITEM "制动5",                       ID_MENUB5
+        MENUITEM "制动4",                       ID_MENUB4
+        MENUITEM "制动3",                       ID_MENUB3
+        MENUITEM "制动2",                       ID_MENUB2
+        MENUITEM "制动1",                       ID_MENUB1
+        MENUITEM "空挡",                        ID_MENUNONE
+        MENUITEM "牵引1",                       ID_MENUD1
+        MENUITEM "牵引2",                       ID_MENUD2
+        MENUITEM "牵引3",                       ID_MENUD3
+        MENUITEM "牵引4",                       ID_MENUD4
+    END
+    POPUP "记录(&R)"
+    BEGIN
+        MENUITEM "第一个记录(&F)",              ID_RECORD_FIRST
+        MENUITEM "前一个记录(&P)",              ID_RECORD_PREV
+        MENUITEM "下一个记录(&N)",              ID_RECORD_NEXT
+        MENUITEM "最后一个记录(&L)",            ID_RECORD_LAST
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "返回信息",                    ID_MENURUNNINGMSG
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助主题(&H)",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "关于 ALLTRACKAUTO(&A)...",    ID_APP_ABOUT
+    END
+END
+
+IDR_CNTR_INPLACE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "传送(&D)...",                 ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+END
+
+IDR_CNTR_INPLACE ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 355, 288
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ALLTRACKAUTO"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,20,19,21,21
+    LTEXT           "ALLTRACKAUTO 1.0 版",IDC_STATIC,106,17,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012",IDC_STATIC,106,33,119,8
+    DEFPUSHBUTTON   "确定",IDOK,279,249,50,14,WS_GROUP
+    LTEXT           "作者:张华",IDC_STATIC,105,251,119,8
+    CONTROL         "1、2013-06-27 根据现场使用习惯做适当修改",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | SS_NOTIFY | WS_GROUP,23,65,
+                    307,9
+END
+
+IDD_ALLTRACKAUTO_FORM DIALOG DISCARDABLE  0, 0, 650, 342
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_DIALOGVIEW DIALOG DISCARDABLE  0, 0, 359, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,258,42,50,14
+    SCROLLBAR       IDC_SCROLLBAR1,7,16,345,18
+END
+
+IDD_DIALOGMSG DIALOG DISCARDABLE  1000, 20, 319, 319
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "返回状态信息"
+MENU IDR_MAINFRAME
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,297,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,227,297,50,14
+    LISTBOX         IDC_LISTSHOWMSGHD,71,31,58,259,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTSHOWMSGSTATUS,11,31,58,259,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTSHOWMSGTRACKCODE,131,31,58,259,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTSHOWMSGNPAPR,191,31,58,259,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTSHOWMSGPAPR,251,31,58,259,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "列车状态:",IDC_STATIC,15,21,40,8
+    LTEXT           "头尾车:",IDC_STATIC,76,21,40,8
+    LTEXT           "轨道码:",IDC_STATIC,137,21,40,8
+    LTEXT           "无源信标:",IDC_STATIC,198,21,40,8
+    LTEXT           "有源信标:",IDC_STATIC,259,21,40,8
+    PUSHBUTTON      "清空",IDC_BSTATUSCLEAR,15,9,34,11
+    PUSHBUTTON      "清空",IDC_BHDCLEAR,76,9,34,11
+    PUSHBUTTON      "清空",IDC_BTCODECLEAR3,137,9,34,11
+    PUSHBUTTON      "清空",IDC_BNPAPRCLEAR,198,9,34,11
+    PUSHBUTTON      "清空",IDC_BPAPRCLEAR,259,9,34,11
+    PUSHBUTTON      "清空所有",IDC_BCLEARALL,136,298,50,14
+END
+
+IDD_DIALOGOTHERSET DIALOG DISCARDABLE  1000, 40, 257, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "其它设置"
+FONT 10, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,184,185,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,30,185,50,14
+    GROUPBOX        "码间隙:",IDC_STATIC,13,7,229,88
+    PUSHBUTTON      "发送码间隙",IDC_BSENDTRACKCODE,182,70,53,15
+    LTEXT           "一系:",IDC_STATIC,17,20,21,8
+    LTEXT           "二系:",IDC_STATIC,17,35,21,8
+    CONTROL         "FSK1",IDC_CHECKFSK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,46,20,28,8
+    CONTROL         "FSK2",IDC_CHECKFSK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,46,35,28,8
+    CONTROL         "超前",IDC_CHECKBEYONG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,83,34,25,8
+    EDITTEXT        IDC_EDITPERSENT,116,32,28,11,ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,149,33,8,9
+    CONTROL         "测速电机2",IDC_CHECKTACHO2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,35,51,8
+    EDITTEXT        IDC_GAPTIME,59,52,28,11,ES_WANTRETURN
+    LTEXT           "间隙时间:",IDC_STATIC,18,53,37,9
+    CONTROL         "间隙保持",IDC_CHECKKEEPSEND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,182,56,56,8
+    LTEXT           "x10ms",IDC_STATIC,91,54,23,9
+    GROUPBOX        "设定:",IDC_STATIC,13,99,229,80
+    PUSHBUTTON      "发送",IDC_BUTTONSENDONTIME,189,158,39,12
+    LTEXT           "注意:码间隙时间范围为3-255",IDC_STATIC,18,72,109,9
+    CONTROL         "即时模式",IDC_CHECKONTIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,89,108,44,8
+    COMBOBOX        IDC_CARRAYFRU,53,128,52,136,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "载频:",IDC_STATIC,28,130,22,9
+    LTEXT           "码频:",IDC_STATIC,127,130,22,9
+    COMBOBOX        IDC_CODEFRU,151,128,75,177,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOGHD DIALOG DISCARDABLE  200, 100, 323, 258
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "头尾车设置"
+MENU IDR_MAINFRAME
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,42,229,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,225,229,50,14
+    GROUPBOX        "状态:",IDC_STATIC,15,14,292,24
+    GROUPBOX        "测速电机:",IDC_STATIC,15,44,142,66
+    GROUPBOX        "继电器:",IDC_STATIC,15,115,292,70
+    CONTROL         "ATO状态",IDC_CHECKATO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,42,24,38,8
+    CONTROL         "ATP1状态",IDC_CHECKATP1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,24,45,8
+    CONTROL         "ATP2状态",IDC_CHECKATP2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,148,24,47,8
+    CONTROL         "测速电机1短线故障",IDC_CHECKTECHOP1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,52,59,100,8
+    CONTROL         "测速电机2短线故障",IDC_CHECKTECHOP2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,52,71,100,8
+    CONTROL         "测速电机1故障速度标志",IDC_CHECKTECH1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,52,83,100,8
+    CONTROL         "测速电机2故障速度标志",IDC_CHECKTECH2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,52,95,100,8
+    GROUPBOX        "FSK:",IDC_STATIC,165,44,142,66
+    CONTROL         "FSK1故障载频、码频标志",IDC_CHECKFSK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,185,60,105,8
+    CONTROL         "FSK2故障载频、码频标志",IDC_CHECKFSK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,185,72,105,8
+    CONTROL         "即时模式",IDC_CHECKFSKMOD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,187,92,47,9
+    CONTROL         "继电器1",IDC_CHECKRELAY1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,128,46,8
+    CONTROL         "继电器2",IDC_CHECKRELAY2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,104,128,46,8
+    CONTROL         "继电器3",IDC_CHECKRELAY3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,156,128,46,8
+    CONTROL         "继电器4",IDC_CHECKRELAY4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,208,128,46,8
+    CONTROL         "继电器5",IDC_CHECKRELAY5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,141,46,8
+    CONTROL         "继电器6",IDC_CHECKRELAY6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,104,141,46,8
+    CONTROL         "继电器7",IDC_CHECKRELAY7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,156,141,46,8
+    CONTROL         "继电器8",IDC_CHECKRELAY8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,208,141,46,8
+    CONTROL         "继电器9",IDC_CHECKRELAY9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,154,46,8
+    CONTROL         "继电器10",IDC_CHECKRELAY10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,104,154,46,8
+    CONTROL         "继电器11",IDC_CHECKRELAY11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,156,154,46,8
+    CONTROL         "继电器12",IDC_CHECKRELAY12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,208,154,46,8
+    CONTROL         "继电器13",IDC_CHECKRELAY13,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,167,46,8
+    CONTROL         "继电器14",IDC_CHECKRELAY14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,104,167,46,8
+    CONTROL         "继电器15",IDC_CHECKRELAY15,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,156,167,46,8
+    CONTROL         "继电器16",IDC_CHECKRELAY16,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,208,167,46,8
+    GROUPBOX        "故障模拟:",IDC_STATIC,16,190,291,34
+    CONTROL         "阅读器故障",IDC_CHECKREADERERR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,33,206,52,9
+    CONTROL         "多普勒数据",IDC_CHECKDOPULDATA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,96,206,52,9
+    CONTROL         "多普勒频率无",IDC_CHECKDOPULFNONE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,159,206,59,9
+    CONTROL         "多普勒频率故障",IDC_CHECKDOPULFFAULT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,223,206,67,9
+END
+
+IDD_DIALOGCARRAYTEST DIALOG DISCARDABLE  500, 200, 298, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "载频测试数据更改"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,203,167,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,40,167,50,14
+    LTEXT           "1-5",IDC_STATIC,22,23,25,8
+    LTEXT           "6-10",IDC_STATIC,22,38,25,8
+    LTEXT           "16-20",IDC_STATIC,22,68,25,8
+    LTEXT           "11-15",IDC_STATIC,22,53,25,8
+    LTEXT           "21-25",IDC_STATIC,22,83,25,8
+    LTEXT           "26-30",IDC_STATIC,22,98,25,8
+    LTEXT           "31-35",IDC_STATIC,22,113,25,8
+    LTEXT           "36-40",IDC_STATIC,22,128,25,8
+    GROUPBOX        "序号:",IDC_STATIC,13,11,38,140
+    GROUPBOX        "载频值:",IDC_STATIC,63,11,218,140
+    EDITTEXT        IDC_TEST1,102,22,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST2,130,22,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST3,158,22,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST4,186,22,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST5,214,22,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST6,102,37,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST7,130,37,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST8,158,37,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST9,186,37,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST10,214,37,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST11,102,52,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST12,130,52,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST13,158,52,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST14,186,52,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST15,214,52,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST16,102,67,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST17,130,67,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST18,158,67,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST19,186,67,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST20,214,67,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST21,102,82,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST22,130,82,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST23,158,82,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST24,186,82,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST25,214,82,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST26,102,97,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST27,130,97,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST28,158,97,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST29,186,97,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST30,214,97,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST36,102,127,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST37,130,127,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST38,158,127,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST39,186,127,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST40,214,127,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST31,102,112,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST32,130,112,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST33,158,112,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST34,186,112,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEST35,214,112,18,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGTRACKCODECHANGE DIALOG DISCARDABLE  300, 80, 405, 300
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "轨道码数据更改"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,309,261,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,50,261,50,14
+    PUSHBUTTON      "保存",IDC_BUTTONCHANGE,310,230,49,13
+    LTEXT           "位置:",IDC_STATIC,18,16,22,8
+    EDITTEXT        IDC_FILEPOSTION,42,14,340,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "读取",IDC_BUTTONREAD,52,229,49,13
+    GROUPBOX        "数据:",IDC_STATIC,22,34,361,180
+    COMBOBOX        IDC_COMBOSTATION,72,69,58,216,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOTRACKNAME,135,69,77,222,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOCARRAYFRU,215,69,61,179,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "站名:",IDC_STATIC,72,55,26,8
+    LTEXT           "轨名:",IDC_STATIC,135,55,26,8
+    LTEXT           "载频:",IDC_STATIC,215,55,26,8
+    LTEXT           "码频:",IDC_STATIC,280,57,26,8
+    COMBOBOX        IDC_COMBOCODEFRU,280,69,61,153,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "上下行:",IDC_STATIC,30,55,26,8
+    COMBOBOX        IDC_COMBOUPDOWN,30,69,37,34,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "原载频:",IDC_STATIC,205,189,31,8
+    LTEXT           "原码频:",IDC_STATIC,291,189,31,8
+    EDITTEXT        IDC_ORIGINALLYCARRAY,239,185,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ORIGINALLYCODE,325,185,27,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGTRAIN DIALOG DISCARDABLE  300, 500, 406, 270
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "车辆信息设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,306,227,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,227,50,14
+    LTEXT           "车辆参考原点:",IDC_STATIC,24,21,55,8
+    COMBOBOX        IDC_COMBOORIGIN,84,20,93,46,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "车辆高度:",IDC_STATIC,24,42,37,8
+    COMBOBOX        IDC_COMBOHIGH,84,40,93,101,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "车辆默认轨道:",IDC_STATIC,24,63,55,8
+    COMBOBOX        IDC_COMBODEFAULTTRACK,84,61,93,46,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "车辆起始位置:",IDC_STATIC,24,84,52,10
+    EDITTEXT        IDC_TRAINSTARTPOS,84,83,93,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_SETTRAINPOS,345,81,36,11
+    PUSHBUTTON      "确定",IDC_HIGHCONFIRM,187,41,36,11
+    LTEXT           "轨道优先级增长方向:",IDC_STATIC,24,107,81,10
+    COMBOBOX        IDC_PRIORITYGROWUP,122,105,53,46,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "确定",IDC_GROWUPCONFIRM,186,105,36,11
+    GROUPBOX        "车辆设置:",IDC_STATIC,13,7,375,128
+    GROUPBOX        "试车线测试:",IDC_STATIC,13,143,375,65
+    PUSHBUTTON      "读取配置文件",IDC_READCONFIG,174,178,58,13
+    EDITTEXT        IDC_EDITCONFIGPATH,52,157,322,12,ES_AUTOHSCROLL
+    LTEXT           "路径:",IDC_STATIC,21,158,24,8
+    LTEXT           "(车钩位置)",IDC_STATIC,181,82,41,10
+    CONTROL         "1车",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    231,83,28,9
+    CONTROL         "6车",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    270,83,32,9
+END
+
+IDD_DIALOGSETPAPR DIALOG DISCARDABLE  150, 150, 423, 291
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "有源APR设置"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        IDC_COMBOUPDOWN,69,19,72,231,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "站名:",IDC_STATIC,167,23,32,8
+    LTEXT           "上下行:",IDC_STATIC,20,21,40,8
+    COMBOBOX        IDC_COMBOSTATIONNAME,214,20,72,231,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "轨道:",IDC_STATIC,290,22,40,8
+    COMBOBOX        IDC_COMBOTRACKNAME,336,21,72,231,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,69,78,18,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,93,78,18,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,117,78,18,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,141,78,18,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,165,78,18,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,189,78,18,13,ES_AUTOHSCROLL
+    LTEXT           "A",IDC_STATIC,73,66,8,8
+    LTEXT           "B",IDC_STATIC,97,66,8,8
+    LTEXT           "C",IDC_STATIC,121,66,8,8
+    LTEXT           "D",IDC_STATIC,145,66,8,8
+    LTEXT           "E",IDC_STATIC,169,66,8,8
+    LTEXT           "F",IDC_STATIC,193,66,8,8
+    PUSHBUTTON      "保存数据",IDC_BUTTONSAVE,245,60,63,31
+    EDITTEXT        IDC_EDITFILEPATH,72,132,235,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "选择配置文件",IDC_BUTTONFILESELECT,319,131,66,14
+    PUSHBUTTON      "读取配置文件",IDC_BUTTONREADFILE,245,170,64,27
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ALLTRACKAUTO Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ALLTRACKAUTO\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ALLTRACKAUTO.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ALLTRACKAUTO 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_ALLTRACKAUTO_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 643
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 335
+    END
+
+    IDD_DIALOGVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_DIALOGMSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 312
+        HORZGUIDE, 68
+        HORZGUIDE, 90
+        HORZGUIDE, 106
+        HORZGUIDE, 122
+        HORZGUIDE, 131
+    END
+
+    IDD_DIALOGOTHERSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_DIALOGHD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_DIALOGCARRAYTEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_DIALOGTRACKCODECHANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 398
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_DIALOGTRAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 399
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_DIALOGSETPAPR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 416
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 284
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 程序初始化失败。请确认 OLE 库程序是正确的版本。"
+    IDP_FAILED_TO_CREATE    "建立对象失败。请确认该对象已被注册入系统。"
+    IDP_FAILED_OPEN_DATABASE "无法打开数据库。"
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "ALLTRACKAUTO\n\nALLTRA\nALLTRA 文件 (*.ata)\n.ata\nALLTRACKAUTO.Document\nALLTRA Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ALLTRACKAUTO"
+    AFX_IDS_IDLEMESSAGE     "如需帮助，请按F1键"
+    AFX_IDS_HELPMODEMESSAGE "选定一个要得到帮助的对象"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+    ID_INDICATOR_DIRECTOR   "方向 前后"
+    ID_INDICATOR_SPEED      "当前列车速度"
+    ID_INDICATOR_HEATHY     "健康信号显示"
+    ID_INDICATOR_VERSION    "软件版本号:M 1.0"
+    ID_INDICATOR_NULL       "占位"
+    ID_INDICATOR_MAIL       "下位机累计总里程显示"
+    ID_INDICATOR_DRIVER     "档位 信息"
+    ID_INDICATOR_EB1        "EB1:1"
+    ID_INDICATOR_EB2        "EB2:1"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+    ID_FILE_SEND_MAIL       "通过电子邮件传送活动文档\n传送邮件"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+    ID_HELP_INDEX           "打开帮助\n帮助主题"
+    ID_HELP_FINDER          "列出帮助主题\n帮助主题"
+    ID_HELP_USING           "显示关于如何使用帮助的指令\n帮助"
+    ID_CONTEXT_HELP         "显示对按钮、菜单和窗口执行单击操作的帮助\n帮助"
+    ID_HELP                 "显示对当前任务或命令的帮助\n帮助"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_PASTE_LINK      "插入剪贴板内容和一条通向其来源的链接\n粘贴链接"
+    ID_EDIT_PASTE_SPECIAL   "用选项插入剪贴板内容\n选择性粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "插入新嵌入的对象\n新对象"
+    ID_OLE_EDIT_LINKS       "编辑链接对象\n编辑链接"
+    ID_OLE_EDIT_CONVERT     "将对象转换成不同的类型\n转换对象"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "激活嵌入或链接的对象"
+    57873                   "激活嵌入或链接的对象"
+    57874                   "激活嵌入或链接的对象"
+    57875                   "激活嵌入或链接的对象"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RECORD_FIRST         "移到第一个记录\n第一个记录"
+    ID_RECORD_LAST          "移到最后一个的记录\n最后一个记录"
+    ID_RECORD_NEXT          "移到下一个记录\n下一记录"
+    ID_RECORD_PREV          "移到前一个记录\n前一记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM32771        "更改视图可以查看到全线内容"
+    ID_MENUSETVIEW          "更改查看轨道位置"
+    ID_MENUGEAR             "列车档位信息"
+    ID_MENUITEM32774        "紧急制动"
+    ID_MENUEB               "紧急制动"
+    ID_MENUITEM32776        "一般制动7"
+    ID_MENUITEM32777        "一般制动6"
+    ID_MENUITEM32778        "一般制动5"
+    ID_MENUITEM32779        "一般制动4"
+    ID_MENUITEM32780        "一般制动3"
+    ID_MENUITEM32781        "一般制动2"
+    ID_MENUITEM32782        "一般制动1"
+    ID_MENUITEM32783        "空挡滑行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM32784        "牵引力1"
+    ID_MENUITEM32785        "牵引力2"
+    ID_MENUITEM32786        "牵引力3"
+    ID_MENUITEM32787        "牵引力4"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_SIR        "SIR:1"
+    ID_INDICATOR_FSB1       "FSB1:1"
+    ID_INDICATOR_FSB2       "FSB2:1"
+    ID_INDICATOR_FSB        "FSB: 1"
+    ID_INDICATOR_RDER1      "RDER1:1"
+    ID_INDICATOR_RDER2      "RDER2:1"
+    ID_INDICATOR_RDER       "RDER :1"
+    ID_INDICATOR_LDER1      "LDER1:1"
+    ID_INDICATOR_LDER2      "LDER2:1"
+    ID_INDICATOR_LDER       "LDER   "
+    ID_INDICATOR_ZVR1       "ZVR1:1"
+    ID_INDICATOR_ZVR2       "ZVR2:1"
+    ID_INDICATOR_ZVR        "ZVR :1"
+    ID_INDICATOR_TIR        "TIR: 1"
+    ID_INDICATOR_CHR1       "CHR1:1"
+    ID_INDICATOR_CHR2       "CHR2:1"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_TIRR       "TIRR:1"
+    ID_INDICATOR_EUMR       "EUMR:1"
+    ID_INDICATOR_READERWORKSTATUS "阅读器:工作状态"
+    ID_INDICATOR_READERDISTANCE "阅读器:阅读距离"
+    ID_INDICATOR_READERBEEP "阅读器:蜂鸣器"
+    ID_INDICATOR_VERSIONOMPM "OMPM:0.0"
+    ID_INDICATOR_VERSION_ATPM "ATPM:0.0"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUDIRFORWARD       "列车前进"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTONSETSPEED       "定速巡航\n定速巡航"
+    ID_BUTTONP1             "\n前进P1挡位"
+    ID_BUTTONP2             "\n前进P2挡位"
+    ID_BUTTONP3             "\n前进P3挡位"
+    ID_BUTTONP4             "\n前进P4挡位"
+    ID_BUTTONPB             "\n空挡滑行"
+    ID_BUTTONB1             "\n刹车B1档位"
+    ID_BUTTONB2             "\n刹车B2档位"
+    ID_BUTTONB3             "\n刹车B3档位"
+    ID_BUTTONB4             "\n刹车B4档位"
+    ID_BUTTONB5             "\n刹车B5档位"
+    ID_BUTTONB6             "\n刹车B6档位"
+    ID_BUTTONB7             "\n刹车B7档位"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTONEB             "\n紧急刹车EB档位"
+    ID_BUTTONCARRAYCHANGE   "\n载频变换测试"
+    ID_BUTTONSHOWHANDLE     "\n是否显示人工操作信息"
+    ID_BUTTONSHOWAUTO       "\n是否显示自动信息"
+    ID_BUTTONRETURN1        "\n是否显示返回信息1"
+    ID_BUTTONDEBUG          "\n是否显示调试信息"
+    ID_BUTTONRETURN2        "\n是否显示返回信息2"
+    ID_BUTTONRETURN3        "\n是否显示返回信息3"
+    ID_BUTTONCALCULATE      "\n是否显示计算结果信息"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTONDISABLEFSB     "\nFSB功能失效"
+    ID_BUTTONDISABLEEB      "\nEB功能失效"
+    ID_AUTOSTOP             "\n前方停车点自动停车"
+    ID_BUTTONTESTLINE       "\n载入试车线测试文件"
+    ID_BUTTONTESTLINEFUCTION "\n载入试车线测试文件"
+    ID_BUTTONFORBIDAPR      "\n禁止发送APR"
+    ID_RECODEREB            "\n记录首次EB位置和速度"
+    ID_BUTTON840            "\n设置轮径值为840"
+    ID_BUTTON32879          "\n设置轮径值为835"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON826            "\n设置轮径值为826"
+    ID_BUTTON818            "\n设置轮径值为818"
+    ID_BUTTON809            "\n设置轮径值为809"
+    ID_BUTTON800            "\n设置轮径值为800"
+    ID_BUTTON791            "\n设置轮径值为791"
+    ID_BUTTON783            "\n设置轮径值为783"
+    ID_BUTTON774            "\n设置轮径值为774"
+    ID_BUTTON835            "\n设置轮径值为835"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ALLTRACKAUTO.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#include "l.chs\afxolecl.rc"        // OLE container resources
+#include "l.chs\afxdb.rc"           // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

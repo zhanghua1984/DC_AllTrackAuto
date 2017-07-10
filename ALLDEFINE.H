@@ -1,0 +1,6 @@
+#define DISTANCE	10
+#define PTOTRACK	30
+#define STOPFLAGLENTH	18
+#define AUTOSTOPBREAK	5.0
+#define TESTCONFIG_FILE_PATH ".\\"
+#define LINEWIDTH	3

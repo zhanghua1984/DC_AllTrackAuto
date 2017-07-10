@@ -1,0 +1,42 @@
+// ALLTRACKAUTO.odl : type library source for ALLTRACKAUTO.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (ALLTRACKAUTO.tlb).
+
+[ uuid(AFDA6781-294C-4049-B3B9-32593529D59E), version(1.0) ]
+library ALLTRACKAUTO
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CALLTRACKAUTODoc
+	
+	[ uuid(56CAF5A2-007C-48D8-A769-1A9A7A0DAF13) ]
+	dispinterface IALLTRACKAUTO
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CALLTRACKAUTODoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CALLTRACKAUTODoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CALLTRACKAUTODoc
+	
+	[ uuid(ECE3983B-F1CC-4B0A-B6D8-6FFD751EE2F8) ]
+	coclass Document
+	{
+		[default] dispinterface IALLTRACKAUTO;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};
